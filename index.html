@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tank Full Alert with Video</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Water Tank Monitoring System</h1>
+
+    <!-- Video Element -->
+    <div class="tank">
+      <video id="water-video" class="water-video" autoplay muted loop>
+        <source src="./istockphoto-872089248-640_adpp_is (1).mp4" type="video/mp4" >
+        Your browser does not support the video tag.
+      </video>
+      <div id="water-level" class="water-level"></div>
+    </div>
+
+    <div class="status-container">
+      <p id="status" class="status">Tank Status: <span>Filling...</span></p>
+      <p class="status-message" id="message">Water is filling...</p>
+    </div>
+    
+    <div class="buttons">
+      <button id="simulate-full" class="simulate-button">Simulate Tank Full</button>
+      <button id="reset" class="reset-button">Reset Tank</button>
+      <button id="pause-video" class="pause-button">Pause Water</button>
+      <button id="play-video" class="play-button">Play Water</button>
+      <br/>
+      <br/>
+      <footer>@Lapse Media Pvt.Ltd </footer>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
